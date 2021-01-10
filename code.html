@@ -11,7 +11,7 @@ li {
 </style>
 
 <!-- Where the top menu bar starts -->
-<header align="center">
+<header align="center" class="main">
 <a href='index.html'>home</a>
 |
 <a href='code.html'>code portfolio</a>
@@ -21,6 +21,43 @@ li {
 <hr>
 </header>
 <!-- Where the top menu bar ends -->
+
+<!-- Where the side bar starts -->
+<style>
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+</style>
+<div class="sidenav">
+  <a href="#about_me">About Me</a>
+  <a href="code.html">Code</a>
+  <a href="tutorials/rolling_mean_functions.html"><p style="margin-left: 40px">rolling mean</a>
+  <a href="google.com">Test</a>
+</div>
+<div class="main">
+<!-- Where the side bar ends -->
 
 <h2>
 Links to my current <a href="https://www.github.com/JoeThomas-git">GitHub</a> repositories.
@@ -75,4 +112,5 @@ How to install the 'joethomasRfunctions' package
 <br>
 <li><a href="tutorials/moving_correlation_functions.html">calculating moving correlations</a>
 </h4>
+</div>
 </html>
