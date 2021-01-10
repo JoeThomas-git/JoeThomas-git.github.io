@@ -1,16 +1,71 @@
+
+<!-- Universal content start -->
 <html>
 <style>
-h1 {
-  font-family: sans-serif;
-  color: black;
-}
-li {
-  font-family: sans-serif;
-  color: black;
-}
+  h1{
+    font-family:  sans-serif;
+    color: black;
+    background-color: white;
+    }
+  h2{
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+    }
+  h3{
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+    }
+  p {
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+    }
+  hr{
+    color: black;
+    }
+  img{
+    width: 200px;
+    height: 200px;
+    }
+  a {
+    font-family: sans-serif;
+    color:black;
+    background-color: white;
+  }
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: sans-serif;
+    }
+  .sidenav a {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-family: sans-serif;
+    background-color: grey;
+    }
+  .sidenav a:hover {
+    color: #f1f1f1;
+    font-family: sans-serif;
+    background-color: white;
+    }
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    font-family: sans-serif;
+    }
 </style>
-
-<!-- Where the top menu bar starts -->
+<!-- Top bar of links start -->
 <header align="center" class="main">
 <a href='index.html'>home</a>
 |
@@ -20,45 +75,19 @@ li {
 <br>
 <hr>
 </header>
-<!-- Where the top menu bar ends -->
-
-<!-- Where the side bar starts -->
-<style>
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-}
-</style>
+<!-- Top bar of links end -->
+<!-- side bar text start-->
 <div class="sidenav">
-  <a href="#about_me">About Me</a>
-  <a href="code.html">Code</a>
-  <a href="tutorials/rolling_mean_functions.html"><p style="margin-left: 40px">rolling mean</a>
-  <a href="google.com">Test</a>
+  <a href="about_me.html">About me</a>
+  <a href="code.html">R code</a>
+  <a style="margin-left:5px" href="tutorials/rolling_mean_functions.html"><li>rolling mean</li></a>
+  <a style="margin-left:5px" ref="tutorials/rolling_correlation_functions.html"><li>rolling correlations</li></a>
+  <a style="margin-left:5px" href="tutorials/binning_functions.html"><li>binning data</li></a>
+  <a href="google.com">Python code</a>
 </div>
+<!-- side bar text end -->
 <div class="main">
-<!-- Where the side bar ends -->
-
+<!-- Individual page content start -->
 <h2>
 Links to my current <a href="https://www.github.com/JoeThomas-git">GitHub</a> repositories.
 </h2>
@@ -112,5 +141,7 @@ How to install the 'joethomasRfunctions' package
 <br>
 <li><a href="tutorials/moving_correlation_functions.html">calculating moving correlations</a>
 </h4>
+<!--Individual page content end -->
 </div>
 </html>
+<!-- Universal content end -->
