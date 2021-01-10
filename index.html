@@ -1,35 +1,61 @@
+<!-- draft index page with better organized css -->
+<!-- Universal content start -->
 <html>
 <style>
-  h1 {
+  h1{
     font-family:  sans-serif;
     color: black;
     background-color: white;
-  }
-  h2 {
+    }
+  h2{
     font-family: sans-serif;
     color: black;
     background-color: white;
-  }
-  h3 {
+    }
+  h3{
     font-family: sans-serif;
     color: black;
     background-color: white;
-  }
+    }
   p {
     font-family: sans-serif;
     color: black;
     background-color: white;
-  }
-  hr {
+    }
+  hr{
     color: black;
-  }
-  img {
+    }
+  img{
     width: 200px;
     height: 200px;
-  }
+    }
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    }
+  .sidenav a {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    }
+  .sidenav a:hover {
+    color: #f1f1f1;
+    }
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    }
 </style>
-
-<!-- Where the top menu bar starts -->
+<!-- Top bar of links start -->
 <header align="center" class="main">
 <a href='index.html'>home</a>
 |
@@ -39,53 +65,17 @@
 <br>
 <hr>
 </header>
-<!-- Where the top menu bar ends -->
-
-<!-- Where the side bar starts -->
-<style>
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-.sidenavsub a {
-  padding: 6px 8px 6px 8px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-}
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-}
-
-</style>
+<!-- Top bar of links end -->
+<!-- side bar text start-->
 <div class="sidenav">
   <a href="#about_me">About Me</a>
   <a href="code.html">Code</a>
-  <a class="sidenavsub" href="tutorials/rolling_mean_functions.html"><p style="margin-left: 40px;background-color:black;color:#818181">rolling mean</a>
+  <a href="tutorials/rolling_mean_functions.html"><p style="margin-left: 40px">rolling mean</p></a>
   <a href="google.com">Test</a>
 </div>
+<!-- side bar text end -->
 <div class="main">
-<!-- Where the side bar ends -->
-
+<!-- Individual page content start -->
 <h1 align="center">
 My homepage from scratch!
 </h1>
@@ -113,5 +103,7 @@ My homepage from scratch!
     Check out some of the GitHub repositories that I've made. I tend to code in html (this website), R, and python.
   </p>
 </body>
+<!--Individual page content end -->
 </div>
 </html>
+<!-- Universal content end -->
