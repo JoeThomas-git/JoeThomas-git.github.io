@@ -76,11 +76,16 @@
     border-radius: 100px;
     position: relative;
     animation-name: zigzag;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   @keyframes zigzag {
     0% {
+      top: 0px;
+      left: -100px;
+    }
+    25% {
       top: 0px;
       left: 0px;
     }
@@ -88,9 +93,13 @@
       top: 0px;
       left: 100px;
     }
-    100% {
+    75% {
       top: 0px;
       left: 0px;
+    }
+    100% {
+      top: 0px;
+      left: -100px;
     }
   }
 </style>
