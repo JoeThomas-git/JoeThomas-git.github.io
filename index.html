@@ -64,6 +64,29 @@
     padding: 0px 10px;
     font-family: sans-serif;
     }
+  .ball {
+    border-radius: 50%;
+    background: green;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes bounce {
+    0% {
+      left: 0px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
 </style>
 <!-- Top bar of links start -->
 <header align="center" class="main">
@@ -91,6 +114,8 @@
 <h1 align="center">
 My homepage from scratch!
 </h1>
+
+<div class="ball"></div>
 
 <body>
   <p>
